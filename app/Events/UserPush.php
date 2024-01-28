@@ -15,15 +15,18 @@ class UserPush implements ShouldBroadcast
     use Dispatchable, InteractsWithSockets, SerializesModels;
 
     public $email;
+    public $data;    
 
-    /**
-     * Create a new event instance.
-     */
-    public function __construct($email)
+    public function __construct($email = null, $data = null)
     {
         
         $this->email = $email;
+        $this->data = $data;
+        
     }
+
+
+
 
     /**
      * Get the channels the event should broadcast on.

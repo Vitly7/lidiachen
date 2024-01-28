@@ -17,9 +17,15 @@
 
         var channel = pusher.subscribe('lidiachen');
         channel.bind('userpush', function(data) {
-            toastr.info(JSON.stringify(data.email) + ' has joined your website');
+            if (data.email) {
+                toastr.info(JSON.stringify(data.email) + ' has joined your website');
+            }
 
+            if (data.data) {
+                toastr.info(JSON.stringify(data.data) + ' has sent a message');
+            }
         });
+
     </script>
   </head>
   <body>

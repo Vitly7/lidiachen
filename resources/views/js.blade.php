@@ -27,6 +27,30 @@
     });
 </script>
 
+<script>
+    $(document).ready(function() {
+        $("#contactForm").submit(function(e) {
+            e.preventDefault(); // Prevent the form from submitting traditionally
+
+            // Your AJAX request to submit the form data
+            $.ajax({
+                url: $("#contactForm").attr("action"),
+                type: "POST",
+                data: $("#contactForm").serialize(),
+                success: function(response) {
+                    // Show the success message
+                    window.location.href = "/ourcollection"
+                },
+                error: function(error) {
+                    // Handle any errors if needed
+                    console.log(error);
+                }
+            });
+        });
+    });
+</script>
+  
+
 {{-- Klik kiri dan kanan yang ada di home --}}
 <script>
     const scrollLeftButtons = document.querySelectorAll('.scroll-left');

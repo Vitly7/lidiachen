@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Events\UserPush;
 use Illuminate\Http\Request;
 
 use Illuminate\Support\Facades\Auth;
@@ -82,6 +82,7 @@ class HomeController extends Controller
 
         $data->save();
 
-        return redirect()->back()->with('message','Email Sent!');
+        event(new userpush($data->name)); 
+
     }
 }
