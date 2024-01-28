@@ -80,7 +80,7 @@
                                             <h5 class="mb-3">Description</h5>
                                             <p class="fw-semibold fs-6" style="white-space: pre-line;">{{ $collection->description }}</p>
               
-                                            <a href="/about" type="button" class="btn btn-primary" style="margin: 100px 0px -10px 0px;">Next</a>
+                                            <a href="/contact" type="button" class="btn btn-primary" style="margin: 100px 0px -10px 0px;">Contact Us</a>
                                         </div>
                                     </div>
                                 </div>

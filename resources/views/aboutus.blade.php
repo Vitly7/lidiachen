@@ -34,12 +34,7 @@
           <p>Lidia Chen Bridal didirikan dengan visi untuk memberikan pengalaman berbelanja gaun pernikahan yang tak terlupakan bagi setiap calon pengantin. Dengan perpaduan antara keahlian desain dan kepekaan terhadap tren pernikahan terkini, kami menghadirkan koleksi gaun yang memukau dan memenuhi berbagai selera dan gaya.</p>
             
             <p>Tim desainer kami bekerja dengan penuh dedikasi untuk menciptakan gaun pernikahan yang tak hanya indah secara estetika, tetapi juga nyaman dipakai sepanjang hari. Kami memahami betapa pentingnya gaun pernikahan dalam merayakan momen bersejarah dalam hidup Anda, dan itulah mengapa kami berusaha keras untuk memastikan setiap gaun yang kami tawarkan mencerminkan keindahan dan keunikan setiap calon pengantin.</p>
-          <ul class="social-icons">
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-            <li><a href="#"><i class="fa fa-behance"></i></a></li>
-          </ul>
+ 
         </div>
       </div>
     </div>
