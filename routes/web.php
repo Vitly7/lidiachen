@@ -86,7 +86,7 @@ route::post('/updatecollections/{id}',[AdminController::class,'updatecollections
 
 route::get('/search',[HomeController::class,'search']);
 route::get('/showcontactus',[AdminController::class,'showcontactus']);
-
+route::get('/deletecontactus/{id}',[AdminController::class,'deletecontactus']);
 
 route::get('/showuser',[AdminController::class,'showuser']);
 route::get('/deleteuser/{id}',[AdminController::class,'deleteuser']);

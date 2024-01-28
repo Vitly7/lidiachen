@@ -46,15 +46,15 @@
                     </tr>
                   </thead>
     
-                  @foreach ($data as $email)
+                  @foreach ($data as $emails)
                   <tbody  style="background-color: black;" align="center">
                     <tr>
-                      <td scope="row">{{ $email->id }}</td>
-                      <td>{{ $email->name }}</td>
-                      <td>{{ $email->email }}</td>
-                      <td>{{ $email->subject }}</td>
-                      <td>{{ $email->message }}</td>
-                      <td><a class="btn btn-danger" onclick="return confirm('Are you sure?')" href="{{ url('deletecontactus',$email->id) }}">Delete</a></td>
+                      <td scope="row">{{ $emails->id }}</td>
+                      <td>{{ $emails->name }}</td>
+                      <td>{{ $emails->email }}</td>
+                      <td>{{ $emails->subject }}</td>
+                      <td>{{ $emails->message }}</td>
+                      <td><a class="btn btn-danger" onclick="return confirm('Are you sure?')" href="{{ url('deletecontactus',$emails->id) }}">Delete</a></td>
                     </tr>
                   </tbody>
                   @endforeach

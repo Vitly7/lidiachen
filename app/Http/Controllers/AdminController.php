@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Collection;
-use App\Models\Email;
+use App\Models\Emails;
 use App\Models\User;
 
 
@@ -86,16 +86,16 @@ class AdminController extends Controller
 
     public function showcontactus()
     {
-        $data=email::all();
+        $data=emails::all();
         return view('admin.showcontactus', compact('data'));
     }
 
 
     public function deletecontactus($id)
     {
-        $data=email::find($id);
+        $data=emails::find($id);
         $data->delete();
-        return redirect()->back()->with('message','Collection Deleted!');
+        return redirect()->back()->with('message','Message Deleted!');
     }
 
 

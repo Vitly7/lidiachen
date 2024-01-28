@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Auth;
 use App\Models\User;
 
 use App\Models\Collection;
-use App\Models\email;
+use App\Models\emails;
 
 class HomeController extends Controller
 {
@@ -74,7 +74,7 @@ class HomeController extends Controller
 
     public function uploademail(Request $request)
     {
-        $data=new email();
+        $data=new emails();
         $data->name=$request->name;
         $data->email=$request->email;
         $data->subject=$request->subject;
