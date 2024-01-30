@@ -39,7 +39,7 @@
             <div class="col-md-4">
               <div class="left-content">
                 <h4>Our Office</h4>
-                <p class="fw-bold">WhatsApp: <br><br>Street: Jl. Paris 2.</p>
+                <p class="fw-bold">WhatsApp: <br><br>Street: Parit H. Husin II, Komplek Alex Griya Permai 3, No D24, Kota Pontianak.</p>
                 <a href="https://www.instagram.com/lidia_chenn/" class="bi bi-instagram text-muted"></a>
               </div>
             </div>
