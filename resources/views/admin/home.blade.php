@@ -17,12 +17,13 @@
 
         var channel = pusher.subscribe('lidiachen');
         channel.bind('userpush', function(data) {
-            if (data.email) {
-                toastr.info(JSON.stringify(data.email) + ' has joined your website');
+            if (data.datas) {
+              toastr.info(JSON.stringify(data.datas) + ' has sent a message');
+                
             }
 
-            if (data.data) {
-                toastr.info(JSON.stringify(data.data) + ' has sent a message');
+            if (data.email) {
+              toastr.info(JSON.stringify(data.email) + ' has joined your website');
             }
         });
 

@@ -15,13 +15,13 @@ class UserPush implements ShouldBroadcast
     use Dispatchable, InteractsWithSockets, SerializesModels;
 
     public $email;
-    public $data;    
+    public $datas;    
 
-    public function __construct($email = null, $data = null)
+    public function __construct($email = null, $datas = null)
     {
         
         $this->email = $email;
-        $this->data = $data;
+        $this->datas = $datas;
         
     }
 

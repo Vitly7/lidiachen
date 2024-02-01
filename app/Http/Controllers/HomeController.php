@@ -74,15 +74,15 @@ class HomeController extends Controller
 
     public function uploademail(Request $request)
     {
-        $data=new emails();
-        $data->name=$request->name;
-        $data->email=$request->email;
-        $data->subject=$request->subject;
-        $data->message=$request->message;
+        $datas=new emails();
+        $datas->name=$request->name;
+        $datas->email=$request->email;
+        $datas->subject=$request->subject;
+        $datas->message=$request->message;
 
-        $data->save();
+        $datas->save();
 
-        event(new userpush($data->name)); 
+        event(new userpush($datas->name)); 
 
     }
 }
